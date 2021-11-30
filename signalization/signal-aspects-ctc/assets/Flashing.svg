@@ -2,7 +2,6 @@
 <svg width="1100px" height="550px" viewBox="0 0 1100 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Artboard</title>
     <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#1A242F" x="0" y="0" width="1100" height="550"></rect>
         <line x1="0" y1="359.091703" x2="1100" y2="359.091703" id="Path-2" stroke="#4A4A4A" stroke-width="20"></line>
         <path d="M0,130.686075 L186.021763,130.686075 C242.478969,130.686075 296.306344,154.547699 334.21862,196.381602 L422.13878,293.396176 C460.051056,335.230079 513.878431,359.091703 570.335637,359.091703 L620.088277,359.091703 L620.088277,359.091703" id="Path-3" stroke="#4A4A4A" stroke-width="20"></path>
         <g id="Group" transform="translate(153.000000, 187.000000) rotate(90.000000) translate(-153.000000, -187.000000) translate(124.000000, 126.000000)">

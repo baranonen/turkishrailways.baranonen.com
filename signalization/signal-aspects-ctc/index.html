@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Signal Aspects (CTC) | Turkish Railways Guide</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		img {
+			background-color: var(--background-alt);
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -50,12 +55,18 @@
 	<h2>Signal Aspects</h2>
 	<p>Before going deeper, let's see some basic examples:</p>
 	<figure>
-		<img src="assets/Example1.svg" alt="">
+		<picture>
+			<source srcset="assets/Example1Dark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/Example1.svg">
+		</picture>
 		<figcaption>Figure 1</figcaption>
 	</figure>
 	<p>In tall signals that do not flash, yellow over a yellow as in Figure 1 means that one block is free and the route is set for the diverging track.</p>
 	<figure>
-		<img src="assets/Example2.svg" alt="">
+		<picture>
+			<source srcset="assets/Example2Dark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/Example2.svg">
+		</picture>
 		<figcaption>Figure 2</figcaption>
 	</figure>
 	<p>In tall signals that do not flash, green as in Figure 2 means that at least 2 blocks are free.</p>
@@ -170,9 +181,10 @@
 		<figcaption>Flashing red over green on a small signal</figcaption>
 	</figure>
 	<p>In shunting operations controlled by the OCC, trains in non signalled areas cannot enter signalled areas in the same direction.</p>
-	<p>Procees with a maximum speed of 25 km/h.</p>
+	<p>Proceed with a maximum speed of 25 km/h.</p>
 	<h2>Special Cases</h2>
-	<p>Tracks that are in the Marmaray line are also equipped with the CBTC signalization system. This system allows for more than one trains to be in the same block, resulting in more frequent operations.</p>
+	<p>Tracks that are in the Marmaray line (Istanbul) are also equipped with the CBTC signalization system. This system allows for more than one trains to be in the same block, resulting in more frequent operations.</p>
+	<p>Signals in this line have one more light on top which is blue.</p>
 	<figure>
 		<img src="assets/BlueOverRed.svg" alt="">
 		<figcaption>Blue over red in three different signal types</figcaption>
