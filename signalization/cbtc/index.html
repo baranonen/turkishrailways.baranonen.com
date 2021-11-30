@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CBTC | Turkish Railways Guide</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		img {
+			background-color: var(--background-alt);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Turkish Railways Guide</h1>
+		<p>This website is still in beta and it might have some errors</p>
+		<details>
+			<summary>CBTC</summary>
+			<a href="/">Home</a>
+			<details>
+				<summary>Signalization</summary>
+				<a href="/signalization/cbtc/">CBTC</a>
+				<a href="/signalization/signal-aspects-ctc/">Signal Aspects (CTC)</a>
+			</details>
+		</details>
+	</header>
+	<hr>
+	<p>The Marmaray line, opened in 2013 between Kazlıçeşme-Ayrılık Çeşmesi and extended to Halkalı-Gebze in 2019 is one of the most modern railways in Turkey.</p>
+	<p>A system called CBTC, that is oftenly used in metros is being used here too. This is the only non-metro line that has this signalling system in Turkey.</p>
+	<figure>
+		<picture>
+			<source srcset="assets/CBTCDark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/CBTC.svg">
+		</picture>
+		<figcaption>Figure 1</figcaption>
+	</figure>
+	<p>As seen in Figure 1, there are no physical blocks in the CBTC system.</p>
+	<hr>
+	<p>The CBTC system's wayside computers are always in communication with the trains' onboard computers.</p>
+	<p>This communication is established using Wi-Fi networks.</p>
+	<p>Onboard computers calculate the position of the train and send this info to the wayside computers.</p>
+	<p>Wayside computers handle this data and give movement authorities to other trains.</p>
+	<p>Onboard computers calculate braking curves according to these movement authorities and continuously monitor that the speed is below this curve.</p>
+	<p>If the speed reaches above this curve, a warning is triggered and an emergency braking application is initiated.</p>
+	<p>Also, if the connection between the onboard and trackside computers cannot be established, the train is automatically stopped as failsafe.</p>
+	<hr>
+	<h2>Calculation of train position</h2>
+	<p>Encoders in the train wheels continuously measure how much did the wheels turn. However, wheel slip etc. can make these values less accurate.</p>
+	<figure>
+		<img src="assets/NormingPoint.jpg" alt="">
+		<figcaption>Norming Point (not in the Marmaray line)</figcaption>
+	</figure>
+	<p>To fix this problem, there are norming points in set points between the tracks. When the train passes over these points, onboard antennas receive signals and update the position.</p>
+	<hr>
+	<p>As I said before, CBTC doesn't need any physical / fixed blocks. However, since conventional trains also have to use the same tracks, a common signalling is needed.</p>
+	<p>In Marmaray, <a href="/signalization/signal-aspects-ctc/" target="_blank">CTC signal aspects</a> are used. However, there's one more blue lamp in the top of each signal.</p>
+	<figure>
+		<img src="assets/BlueOverRed.svg" alt="">
+		<figcaption>Blue over red signal</figcaption>
+	</figure>
+	<p>This aspect means that the next block is occupied, but a train with a CBTC system can continue without stopping.</p>
+	<figure>
+		<picture>
+			<source srcset="assets/RedSignalDark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/RedSignal.svg">
+		</picture>
+		<figcaption>Train between two blocks</figcaption>
+	</figure>
+	<p>In this example, a train is between two blocks and the signal is showing red, because the next train cannot move yet.</p>
+	<figure>
+		<picture>
+			<source srcset="assets/BlueSignalDark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/BlueSignal.svg">
+		</picture>
+		<figcaption>A safe distance between the signal and train</figcaption>
+	</figure>
+	<p>Here, the train has moved forward enough for the next train to pass the signal.</p>
+	<p>The driver of a CBTC equipped train doesn't actually need to see and read these signals.</p>
+	<p>Speed restrictions, current speed, mode and starting permission is shown in the driver's screen as well.</p>
+	<figure>
+		<img src="assets/StartingPermission.svg" alt="">
+		<figcaption>Starting permission alert in the driver's screen</figcaption>
+	</figure>
+	<hr>
+	<h2>Examples</h2>
+	<figure>
+		<picture>
+			<source srcset="assets/CBTCExample1Dark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/CBTCExample1.svg">
+		</picture>
+		<figcaption>Figure 2</figcaption>
+	</figure>
+	<p>As seen in Figure 2, the second block is occupied by a CBTC-equipped train and the signal tells that the next train can continue if it's equipped with CBTC too.</p>
+	<p>However, the next train is not equipped with this system and cannot continue. If it does, it will get an emergency braking application by the ETCS system (Marmaray has ETCS L1 installed as well).</p>
+	<figure>
+		<picture>
+			<source srcset="assets/Example2CBTCDark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/Example2CBTC.svg">
+		</picture>
+		<figcaption>Figure 3</figcaption>
+	</figure>
+	<p>In Figure 3, the second block is occupied by a train that is not equipped with CBTC. Since the system cannot exactly know the train's position, it has to make the entire block occupied, just like in a normal track.</p>
+	<p>The next train cannot continue, regardless if it's CBTC-equipped or not. If it does, it will get an ETCS / CBTC emergency braking application.</p>
+	<figure>
+		<picture>
+			<source srcset="assets/CBTCExample3Dark.svg" media="(prefers-color-scheme: dark)">
+			<img src="assets/CBTCExample3.svg">
+		</picture>
+		<figcaption>Figure 4</figcaption>
+	</figure>
+	<p>The case in Figure 4 the most common scenario. If there is enough space between the signal and the first train, the second train can start moving as well.</p>
+</body>
+</html>

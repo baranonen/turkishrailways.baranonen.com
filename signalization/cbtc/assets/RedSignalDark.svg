@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1100px" height="550px" viewBox="0 0 1100 550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <line x1="-217" y1="355.25" x2="1500" y2="354.5" id="Path-2" stroke="#4A4A4A" stroke-width="31.2181818"></line>
+        <rect id="Rectangle" fill="#1A242F" x="192" y="329" width="8" height="50"></rect>
+        <g id="Group" transform="translate(161.000000, 78.000000)">
+            <path d="M35,1.36319394 C44.2885475,1.36319394 52.697749,5.1281217 58.7848137,11.2151863 C64.8718783,17.302251 68.6368061,25.7114525 68.6368061,35 L68.6368061,35 L68.6368061,169 C68.6368061,178.288548 64.8718783,186.697749 58.7848137,192.784814 C52.697749,198.871878 44.2885475,202.636806 35,202.636806 C25.7114525,202.636806 17.302251,198.871878 11.2151863,192.784814 C5.1281217,186.697749 1.36319394,178.288548 1.36319394,169 L1.36319394,169 L1.36319394,35 C1.36319394,25.7114525 5.1281217,17.302251 11.2151863,11.2151863 C17.302251,5.1281217 25.7114525,1.36319394 35,1.36319394 Z" id="Combined-Shape" stroke="#4A4A4A" stroke-width="2.72638788" fill="#000000"></path>
+            <ellipse id="Oval" fill="#2F2F2F" cx="35" cy="81.6" rx="13.4615385" ry="13.6"></ellipse>
+            <ellipse id="Oval" fill="#2F2F2F" cx="35" cy="40.8" rx="13.4615385" ry="13.6"></ellipse>
+            <ellipse id="Oval" fill="#2F2F2F" cx="35" cy="122.4" rx="13.4615385" ry="13.6"></ellipse>
+            <ellipse id="Oval" fill="#FF0000" cx="35" cy="163.2" rx="13.4615385" ry="13.6"></ellipse>
+        </g>
+        <rect id="Rectangle" fill="#FFFFFF" x="161" y="306" width="314" height="45"></rect>
+    </g>
+</svg>

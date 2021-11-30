@@ -6,8 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Turkish Railways Guide | Baran Önen</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<style>
+		img {
+			width: 75%;
+		}
+	</style>
+	<script>
+		let captions = {
+			1: "TCDD E68000 Hyundai Rotem electric locomotive passing by Erenköy Station",
+			2: "Two high speed (YHT) trains next to each other at Erenköy Station <br> Right: HT65000 - Caf, Left: HT80000 - Siemens Velaro",
+			3: "View of the tunnels from Istanbul M2 Şişli-Mecidiyeköy station",
+			4: "A new Hyundai Rotem train departing from the Istanbul M2 Levent Station",
+			5: "Manufacturer plate of a new Hyundai Rotem train in the Istanbul M2 line",
+			6: "View of the tunnels of the Istanbul M1 line",
+			7: "A Bombardier Flexity Swift tram on the Istanbul T1 line arrives into the station",
+			8: "An overground station of the Istanbul M7 line, which was opened in 2020",
+			9: "Cab of an old Hyundai Rotem train in the Istanbul M2 line",
+			10: "TCDD E68000 Hyundai Rotem electric locomotive waiting at Halkalı Gar (train station)",
+			11: "DE13000 (CZ Loko EffiShunter) moving a Marmaray E640000 (Hyundai Rotem) train",
+			12: "DE24000 diesel locomotive waiting at Halkalı Gar (train station)",
+			13: "DH9500 diesel shunting locomotive waiting at Halkalı Gar (train station)",
+			14: "Two high speed (YHT) trains head to head with each other at Söğütlüçeşme Station <br> Left: HT65000 - Caf, Right: HT80000 - Siemens Velaro",
+			15: "An old Hyundai Rotem train in the Istanbul M2 line departing from Taksim. The next train is kept at a safe distance with the <a href='./signalization/cbtc' target='_blank'>CBTC</a> signalization system"
+		}
+
+		function randompicture() {
+			picture = Math.floor(Math.random() * (15 - 1 + 1)) + 1
+			document.getElementById("intro").src = "./intros/" + picture + ".jpeg"
+			document.getElementById("caption").innerHTML = captions[picture]
+		}
+	</script>
 </head>
-<body>
+<body onload="randompicture()">
 	<header>
 		<h1>Turkish Railways Guide</h1>
 		<p>This website is still in beta and it might have some errors</p>
@@ -16,12 +46,17 @@
 			<a href="/">Home</a>
 			<details>
 				<summary>Signalization</summary>
+				<a href="/signalization/cbtc/">CBTC</a>
 				<a href="/signalization/signal-aspects-ctc/">Signal Aspects (CTC)</a>
 			</details>
 		</details>
 	</header>
 	<hr>
 	<p>Welcome to the Turkish Railways Guide.</p>
+	<figure>
+		<img src="" id="intro" alt="">
+		<figcaption id="caption"></figcaption>
+	</figure>
 	<h2>Why does this website exist?</h2>
 	<p>There are lots of info about railways in countries like the UK, Germany and the USA but technical information about Turkish railways is very limited. In fact, let alone English documents, there are not a lot of documents in Turkish either.</p>
 	<p>I'm aiming to help fix this problem and share my knowledge with other people here.</p>
