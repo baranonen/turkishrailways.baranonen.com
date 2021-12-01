@@ -29,11 +29,16 @@
 			12: "DE24000 diesel locomotive waiting at Halkalı Gar (train station)",
 			13: "DH9500 diesel shunting locomotive waiting at Halkalı Gar (train station)",
 			14: "Two high speed (YHT) trains head to head with each other at Söğütlüçeşme Station <br> Left: HT65000 - Caf, Right: HT80000 - Siemens Velaro",
-			15: "An old Hyundai Rotem train in the Istanbul M2 line departing from Taksim. The next train is kept at a safe distance with the <a href='./signalization/cbtc' target='_blank'>CBTC</a> signalization system"
+			15: "An old Hyundai Rotem train in the Istanbul M2 line departing from Taksim. The next train is kept at a safe distance with the <a href='./signalization/cbtc' target='_blank'>CBTC</a> signalization system",
+			16: "ERTMS onboard computers developed by Aselsan - Eurasia Rail 2021",
+			17:	"View of the tunnels from Istanbul M2 Levent station",
+			18: "Electic traction motor of an E5000 locomotive - Eurasia Rail 2021",
+			19: "Aselsan VVVF drive for trains - Eurasia Rail 2021",
+			20: "Depot of the Istanbul T5 line - Metro İstanbul 2. Train Pulling Competition"
 		}
 
 		function randompicture() {
-			picture = Math.floor(Math.random() * (15 - 1 + 1)) + 1
+			picture = Math.floor(Math.random() * (20 - 1 + 1)) + 1
 			document.getElementById("intro").src = "./intros/" + picture + ".jpeg"
 			document.getElementById("caption").innerHTML = captions[picture]
 		}
